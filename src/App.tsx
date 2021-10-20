@@ -1,3 +1,10 @@
+import './styles.css'
+
 export const App = () => {
-    return <h1>Hello world!</h1>
+  const num = 'hello'
+  return (
+    <h1>
+      Hello world!-{num} {process.env.NODE_ENV} {process.env.name}
+    </h1>
+  )
 }
